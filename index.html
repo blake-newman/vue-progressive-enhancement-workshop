@@ -43,7 +43,10 @@
 
       <modal v-ref:modal1 v-cloak>
         <h3 slot="header">Modal 1</h3>
-        <div slot="body">Click `Close`!</div>
+        <div slot="body">Click `Continue`!</div>
+        <div slot="footer">
+          <button class="modal-button" @click="parentHandler">Continue</button>
+        </div>
       </modal>
 
       <modal v-ref:modal2 v-cloak>

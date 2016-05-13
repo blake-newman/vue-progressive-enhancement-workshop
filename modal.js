@@ -15,5 +15,11 @@ Vue.component('modal', {
 
 // start app
 new Vue({
-  el: '#app'
+  el: '#app',
+  methods: {
+    parentHandler: function () {
+      this.$refs.modal1.close();
+      this.$refs.modal2.open();
+    }
+  }
 });
