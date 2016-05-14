@@ -38,6 +38,18 @@
 
 
     <div id="app">
+      <button @click="$refs.modal1.open">Show Modal 1</button>
+      <button @click="$refs.modal2.open">Show Modal 2</button>
+
+      <modal v-ref:modal1 v-cloak>
+        <h3 slot="header">Modal 1</h3>
+        <div slot="body">Click `Close`!</div>
+      </modal>
+
+      <modal v-ref:modal2 v-cloak>
+        <h3 slot="header">Modal 2</h3>
+        <div slot="body">Please click `Close`!</div>
+      </modal>
     </div>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/vue/latest/vue.js"></script>
