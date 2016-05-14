@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="modal.css">
+    <link rel="stylesheet" type="text/css" href="modal-animation.css">
+
+    <title>Vue.js Progressive enhancement</title>
+
+    <style type="text/css">
+      [v-cloak] {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <template id="modal-template">
+      <div class="modal-mask">
+        <div class="modal-wrapper">
+          <div class="modal-container">
+            <div class="modal-header">
+            </div>
+
+            <div class="modal-body">
+            </div>
+
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <div id="app">
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/vue/latest/vue.js"></script>
+    <script type="text/javascript" src="modal.js"></script>
+  </body>
+</html>
